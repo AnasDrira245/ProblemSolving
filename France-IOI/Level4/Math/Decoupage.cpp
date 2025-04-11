@@ -14,26 +14,14 @@ const ll prime = 1000003;
 void solve(){
     ll n,p;
     cin>>n>>p;
-    ll ans1=1;
-    ll ans2=1;
-    ll ans3=1;
-    for(int i=1;i<=n;i++){
-        ans1*=i;
-    }
-     for(int i=1;i<=p;i++){
-        ans2*=i;
-    }
-    for(int i=1;i<=n-p;i++){
-        ans3*=i;
-    }
-    cout<<setprecision(20)<< (ans1/(ans2*ans3) )  <<endl;
+    cout<<__gcd(n,p)<<endl;
 }
 int main()
 {
      //freopen("input.txt","r",stdin);freopen("output.txt","w",stdout);
       FAST ;
       int t = 1  ;
-           // cin>> t;
+          //  cin>> t;
             while( t--) {
                         solve();
             }
